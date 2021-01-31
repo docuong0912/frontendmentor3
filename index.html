@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: hsl(0, 100%, 74%);
+    }
+    #container{
+      width: 100%;
+      background-image: url("images/bg-intro-mobile.png");
+      background-repeat: no-repeat;
+      height: 500px;
+    }
+    #intro{
+      text-align: center;
+      color: white;
+      padding:50px;
+     
+    }
+    #intro p{
+       line-height: 1.5;
+    }
+    button{
+      width: 90%;
+      height: 80px;
+      margin-left: 20px;
+      text-align: center;
+      color: white;
+      background-color:hsl(248, 32%, 49%);
+      outline: none;
+      box-shadow: 1px 1px 10px black;
+      border-radius: 15px;
+    }
+    button {
+      color: lightgrey;
+    }
+    button strong{
+      color: white;
+    }
+    form{
+      background-color: white;
+      width: 75%;
+      margin:20px 50px;
+      padding-top: 10px;
+      border-radius: 10px;
+    }
+    input{
+      display: block;
+      margin:10px 15px;
+      width: 85%;
+      height: 50px;
+      border-radius: 5px;
+      outline: none;
+      border: 1px solid lightgrey;
+    }
+    form button{
+      width: 90%;
+      margin-left: 10px;
+      height: 50px;
+      border-radius: 0;
+      margin-top: 0;
+      box-shadow: none;
+      border: none;
+      color: white;
+      background-color: hsl(154, 59%, 51%);
+    }
+    #ps{
+      color: grey;
+      text-align: center;
+      margin:10px;
+      line-height: 1.2;
+    }
+    #ps a{
+      color: red;
+      text-decoration: none;
+    }
+    @media screen and (min-width:1000px ){
+      body{
+        background-color: lightgrey;
+      }
+      #container{
+        background-image:url("images/bg-intro-desktop.png");
+        background-color: hsl(0, 100%, 74%);
+        width: 70%;
+        height: 500px;
+        margin:100px auto;
+      }
+      #intro{
+        position: relative;
+        bottom: 50px;
+        display: inline-block;
+        width: 35%;
+        margin-left: 100px;
+        padding: 0;
+        text-align: left;
+      }
+      #intro p{
+        font-size: 10px;
+      }
+      form{
+        position: relative;
+        display: inline-block;
+        width: 40%;
+        top: 80px;
+      }
+      input{
+
+        height: 30px;
+        margin:20px;
+        padding-left: 10px
+      }
+      button{
+        position: absolute;
+        top:23%;
+        margin: 0 40px;
+        width: 28%;
+        height: 40px;
+        border-radius: 0;
+      }
+      form button{
+        position: relative;
+        left: 10px;
+      }
+      #ps{
+        font-size: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="intro">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. </p>
+    </div>
+     <button><strong>Try it free 7 days</strong>  then<br> $20/mo. thereafter</button>
+    <form>
+      <input type="text" placeholder=" First Name" required="">
+      <input type="text" placeholder="Last Name" required="">
+      <input type="Email" placeholder="Email Address" required="">
+      <input type="Password" placeholder="Password" required="">
+      <button>Claim your free trial </button>
+      <div id="ps">By clicking the button, you are agreeing to our<a href="#">Terms and Services</a> </div>
+    </form>
+
+  </div>
+</body>
+</html>
